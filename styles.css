@@ -1,0 +1,111 @@
+body{
+    font-family:Tahoma, Geneva, sans-serif;
+}
+
+h1{
+    font-size: 50px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+#eagles h2 {text-shadow: 2px 2px #ff0000;}
+p {
+    font-size: 20px;
+}
+    
+#header, #subscribe, #eagles, #quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0;
+}
+
+#header {
+    color: white;
+    background-image: url("https://obamadiary.files.wordpress.com/2016/04/dbqubwbv8hbwy.gif?w=788&h=443");
+}
+
+img {
+    border-radius: 50%;   
+}
+
+#eagles {
+    background: blue;
+    color: white;
+}
+
+.videoEmbed {
+    width: 560px;
+    height: 315px;
+}
+
+#pics img{
+    width: 20%;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+}
+#pics {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0;
+}
+
+#pics img:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+#quote {
+    background-color: #1b2c3a;
+    color: white;
+}
+
+/* Subscribe Section */
+
+#subscribe {
+    background: #f5fc74;
+    justify-content: center;
+    padding: 60px;
+    border: 80px solid #fafcd1;
+}
+
+#subscribe button {
+    width: 300px;   
+    height: 50px;
+    font-size: 20px;
+    background: blue;
+    color: white;
+    border-radius: 5px;
+    border: solid white 3px;
+}
+
+#subscribe button:hover {
+    background: #f5fc74;
+    color: black;
+}
+#subscribe h2 {
+    text-shadow: 2px 2px #FFFFFF;
+}
+
+@media only screen and (min-width: 1024px) {
+    /* For desktop: */
+    .main {
+        width: 80%;
+    }
+    #subscribe {
+        width: 20%;
+    }
+    .content {
+        display: flex;
+        flex-direction: row;
+    }
+}
